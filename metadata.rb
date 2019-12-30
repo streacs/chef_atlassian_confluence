@@ -1,20 +1,23 @@
 name 'atlassian_confluence'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'All Rights Reserved'
-description 'Installs/Configures atlassian_confluence'
-long_description 'Installs/Configures atlassian_confluence'
+maintainer 'Oliver Wolf'
+maintainer_email 'owolf@tecracer.de'
+license 'MIT'
+description 'Installs/Configures Atlassian Confluence'
 version '0.1.0'
-chef_version '>= 14.0'
+chef_version '>= 15.0'
+
+%w( ubuntu ).each do |os|
+  supports os
+end
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/<insert_org_here>/atlassian_confluence/issues'
+issues_url 'https://github.com/streacs/chef_atlassian_confluence/issues'
 
 # The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/atlassian_confluence'
+source_url 'https://github.com/streacs/chef_atlassian_confluence'
